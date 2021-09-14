@@ -1,0 +1,30 @@
+@import "../../shared.scss";
+
+::ng-deep {
+  .ngx-charts {
+    width: 100% !important;
+    // background-color: red;
+    min-height: 500px;
+  }
+
+  .ngx-charts-outer {
+    width: 100% !important;
+    min-height: 500px;
+  }
+
+  .ngx-charts .tooltip-anchor {
+    fill: white !important;
+  }
+  .ngx-charts .gridline-path {
+    stroke: rgba(255, 255, 255, 0.05) !important;
+  }
+}
+
+.wrapper {
+  background-color: $bgSecond;
+  display: block;
+  // min-height: 510px;
+  border-left: solid 3px $bgColor;
+  border-right: solid 3px $bgColor;
+  padding: 0.5rem;
+}

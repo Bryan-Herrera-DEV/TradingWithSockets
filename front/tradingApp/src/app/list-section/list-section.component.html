@@ -1,0 +1,18 @@
+<perfect-scrollbar class="wrapper" style="max-height: 565px;" [config]="config">
+  <ul>
+    <li>
+      <div class="inside-list">
+        <div class="text-muted">Precio</div>
+        <div class="text-muted">Cantidad(BTC)</div>
+        <div class="text-muted">Total</div>
+      </div>
+    </li>
+    <li *ngFor="let a of amounts">
+      <div class="inside-list">
+        <div class="text-danger">{{a[1] | number:'1.0-0'}}</div>
+        <div class="text-white">0,455445</div>
+        <div class="text-white">{{a[0] | date:'h:mm:ss a'}}</div>
+      </div>
+    </li>
+  </ul>
+</perfect-scrollbar>

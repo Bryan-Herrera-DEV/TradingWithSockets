@@ -1,0 +1,103 @@
+@import "../shared.scss";
+.icon {
+  color: $mainColor;
+}
+.header {
+  padding: 0.25rem 0.5rem;
+  background-color: #12161c;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    li {
+      cursor: pointer;
+      color: white;
+      padding: 0.5rem 0.65rem;
+      font-size: 1rem;
+      .uil {
+        font-size: 1.1rem;
+      }
+      &.logo-text {
+        color: $mainColor;
+        font-weight: 600;
+      }
+      &:hover {
+        color: $mainColor;
+      }
+    }
+  }
+}
+
+.video-link {
+  padding: 0 2rem;
+  color: white;
+  justify-content: flex-end;
+  .uil {
+    padding: 0 0.5rem;
+  }
+}
+
+.alert-zone {
+  background-color: $bgSecond;
+  padding: 1rem 0.5rem;
+  text-align: center;
+  color: $textGray;
+  font-size: 0.85rem;
+  opacity: 0.7;
+  a {
+    padding: 0 0.25rem;
+    color: white;
+  }
+}
+
+.sub-header {
+  border: solid 3px $bgColor;
+  background-color: $bgSecond;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  .wrapper-sub-header {
+    display: flex;
+    flex: 1;
+    padding: 0.75rem;
+    width: 100%;
+    .small {
+      font-size: 0.85rem;
+      color: $textGray;
+    }
+    .block {
+      padding: 0.35rem;
+      padding-right: 3.5rem;
+      color: white;
+    }
+
+    .block-1 {
+      .name {
+        font-weight: 500;
+      }
+    }
+
+    .block-2 {
+      .name {
+        font-weight: 500;
+      }
+    }
+
+    .block-3 {
+      .name {
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.wrapper-main {
+  margin: auto;
+  width: 80%;
+}

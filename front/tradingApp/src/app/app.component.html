@@ -1,0 +1,93 @@
+<!-- Section HEADER ----->
+<section class="header">
+  <ul>
+    <li class="logo-text"><i class="uil uil-bitcoin-circle"></i> TRADING</li>
+    <li *ngFor="let link of menu">
+      <span class="link">
+        <span class="icon" [innerHTML]="link?.icon"></span>
+        <span>{{link.name}}</span>
+        <!-- <i class="uil uil-bitcoin-circle"></i> -->
+      </span>
+    </li>
+  </ul>
+
+  <ul>
+    <li *ngFor="let link of options">
+      <span class="link">
+        <span class="icon" [innerHTML]="link?.icon"></span>
+        <span>{{link.name}}</span>
+        <!-- <i class="uil uil-bitcoin-circle"></i> -->
+      </span>
+    </li>
+  </ul>
+</section>
+
+
+<!-- Section Alert-->
+<section class="alert-zone">
+  Esta aplicación es falsa y solo se realizo con objetivo educativo de progamación <a href="#">Ver video</a>
+</section>
+
+
+
+<!-- Section Sub Header-->
+<section class="sub-header wrapper-main">
+  <div class="wrapper-sub-header">
+    <div class="block block-1">
+      <div>
+        <h4 class="name">BTC/USD</h4>
+      </div>
+      <div class="small"><i class="icon uil uil-USDo-circle"></i> Bitcoin</div>
+    </div>
+    <div class="block block-2">
+      <div class="name">
+        29,683.39
+      </div>
+      <div class="small">€29,643.39</div>
+
+    </div>
+    <div class="block block-3">
+      <div class="name">
+        0.45%
+      </div>
+      <div class="small">24h cambio</div>
+
+    </div>
+  </div>
+  <div class="wrapper-sub-header">
+    <div class="block block-1">
+      <div>
+        <h4 class="name">ETH/USD</h4>
+      </div>
+      <div class="small"><i class="icon uil uil-USDo-circle"></i> Ethereum</div>
+    </div>
+    <div class="block block-2">
+      <div class="name">
+        29,683.39
+      </div>
+      <div class="small">€29,643.39</div>
+
+    </div>
+    <div class="block block-3">
+      <div class="name">
+        0.45%
+      </div>
+      <div class="small">24h cambio</div>
+
+    </div>
+  </div>
+  <!-- <div class="wrapper-sub-header video-link">
+    <i class="uil uil-youtube"></i> Tutorial Video
+  </div> -->
+</section>
+
+<!-- Section CHART-->
+<section class="wrapper-main row">
+
+  <app-list-section [coin]="'BTC'" class="col-2"></app-list-section>
+
+  <app-chart-section class="col-10"></app-chart-section>
+
+  <app-list-section [coin]="'ETH'" class="col-2"></app-list-section>
+
+</section>
